@@ -3,7 +3,7 @@ Here is an example implementation of a bloom filter in Golang that includes an a
 To create a BloomFilter instance, call the NewBloomFilter function and pass in the desired size of the filter (the number of bits), as well as an array of hash functions to be used. For example:
 
 ```
-filter := internals.NewBloomFilter(10000, []bloomfilter.HashFunc{bloomfilter.NewHashFunc()})
+filter := bloomfilter.NewBloomFilter(10000, []bloomfilter.HashFunc{bloomfilter.NewHashFunc()})
 ```
 
 To add a key to the filter, call the Add method on the filter instance, passing in the key as a string. For example:
