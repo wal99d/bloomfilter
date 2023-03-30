@@ -1,3 +1,5 @@
+[![Go Reference](https://pkg.go.dev/badge/github.com/wal99d/bloomfilter.svg)](https://pkg.go.dev/github.com/wal99d/bloomfilter)
+
 Here is an example implementation of a bloom filter in Golang that includes an add and remove function, and is atomic aware:
 
 To create a BloomFilter instance, call the NewBloomFilter function and pass in the desired size of the filter (the number of bits), as well as an array of hash functions to be used. For example:
