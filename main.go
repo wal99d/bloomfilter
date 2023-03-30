@@ -3,11 +3,11 @@ package main
 import (
 	"fmt"
 
-	"github.com/wal99d/bloomfilter/internals"
+	"github.com/wal99d/bloomfilter/bloomfilter"
 )
 
 func main() {
-	filter := internals.NewBloomFilter(10000, []internals.HashFunc{internals.NewHashFunc()})
+	filter := bloomfilter.NewBloomFilter(10000, []bloomfilter.HashFunc{bloomfilter.NewHashFunc()})
 
 	filter.Add("A")
 	filter.Add("B")
